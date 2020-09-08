@@ -1,5 +1,3 @@
-@import url(../node_modules/bootstrap/scss/bootstrap.scss);
-
 //Importerer Nunito font
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
 
@@ -18,3 +16,6 @@ $theme-colors: (
         "primary": #8A0BDB,
         "secondary": #0BDBA3
 );
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
