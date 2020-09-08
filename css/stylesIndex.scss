@@ -1,3 +1,5 @@
+@import "stylesBootstrap.min.css";
+
 * { /* Gælder alt på hele siden */
   box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen, padding mv. */
 }
@@ -38,3 +40,33 @@ img {
   max-width: 100%; /* Bredde må maks fylde 100% */
   height: auto; /* Højden skal tilpasse sig */
 }
+.frontBackground{
+  height: 100vh;
+
+  .navbar{
+
+    img{
+      width: 30px;
+      color: white;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
