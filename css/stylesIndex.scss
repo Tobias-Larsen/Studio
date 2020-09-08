@@ -1,3 +1,4 @@
+
 * { /* Gælder alt på hele siden */
   box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen, padding mv. */
 }
@@ -40,21 +41,13 @@ img {
 }
 
 
-#carouselExampleIndicators {
-  .carousel-indicators{
-    ol{
-      li{
-        border-radius: 100px;
-        height: 14px;
-        width: 14px;
-      }
-
-    }
-  }
-}
 
 .carousel-indicators li{
   border-radius: 100%;
   height: 14px;
   width: 14px;
+}
+
+.carousel-indicators .active{
+  background-color: secondary;
 }
