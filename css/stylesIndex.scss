@@ -1,3 +1,8 @@
+@import "stylesBootstrap.min.css";
+
+$secondary: #0BDBA3;
+
+
 
 * { /* Gælder alt på hele siden */
   box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen, padding mv. */
@@ -49,5 +54,31 @@ img {
 }
 
 .carousel-indicators .active{
-  background-color: secondary;
+  background-color: $secondary;
+
+
+}
+
+.carousel-control-next {
+  display: none;
+
+}
+
+.carousel-control-prev {
+  display: none;
+}
+
+.carousel-indicators li{
+  transition: opacity .6s ease;
+  background-color: inherit;
+  backface-visibility: visible;
+  border: solid;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.carousel-indicators .active {
+  background-color: #0bdba3;
+  border: solid;
+  color: #0bdba3;
 }
