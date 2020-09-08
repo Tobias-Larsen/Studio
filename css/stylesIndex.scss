@@ -38,3 +38,23 @@ img {
   max-width: 100%; /* Bredde må maks fylde 100% */
   height: auto; /* Højden skal tilpasse sig */
 }
+
+
+#carouselExampleIndicators {
+  .carousel-indicators{
+    ol{
+      li{
+        border-radius: 100px;
+        height: 14px;
+        width: 14px;
+      }
+
+    }
+  }
+}
+
+.carousel-indicators li{
+  border-radius: 100%;
+  height: 14px;
+  width: 14px;
+}
