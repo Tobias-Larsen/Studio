@@ -1,0 +1,1 @@
+{"version":3,"sources":["stylesTobias.scss"],"names":[],"mappings":"AAAA,iBACE,YAAa,CADf,6BAMM,UAAW,CACX,UAAY","file":"stylesTobias.min.css","sourcesContent":[".frontBackground{\r\n  height: 100vh;\r\n\r\n  .navbar{\r\n\r\n    img{\r\n      width: 30px;\r\n      color: white;\r\n    }\r\n  }\r\n}"]}
