@@ -1,6 +1,11 @@
 @import "stylesBootstrap.min.css";
 
 $secondary: #0BDBA3;
+$primary: #8A0BDB;
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
 
 
 * { /* Gælder alt på hele siden */
@@ -84,10 +89,10 @@ img {
 
 
 .carousel-item .gradientOverlay{
-  background-image: linear-gradient($secondary, red);
+  background-image: linear-gradient($secondary, $primary);
   height: 100%;
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .carousel-item > div{
