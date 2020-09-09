@@ -14,8 +14,10 @@ body {
 
 $theme-colors: (
         "primary": #8A0BDB,
-        "secondary": #0BDBA3
+        "secondary": #0BDBA3,
+        "bgblack": #1F1F1F
 );
 
-
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+

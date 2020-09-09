@@ -1,11 +1,45 @@
+@import "stylesBootstrap.min.css";
+
+$primary: #8A0BDB;
+$secondary: #0BDBA3;
+
 .frontBackground{
   height: 100vh;
+  background-image: url("../img/bridge-1660417_1920.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
 
-  .navbar{
+  > div{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
 
-    img{
-      width: 30px;
-      color: white;
+    > .navbar{
+
+      > img{
+        width: 35px;
+        filter: invert(100%);
+      }
+    }
+
+    > img{
+      filter: invert(100%);
+      height: 50px;
+      width: fit-content;
+    }
+
+    > .middle{
+
+      > a{
+        background-image: linear-gradient(to right, $secondary, $primary);
+        background-size: 110%;
+        background-position: center;
+        border-radius: 100px;
+
+        > p{
+          border-radius: 100px;
+        }
+      }
     }
   }
 }
