@@ -115,5 +115,12 @@ img {
   background-repeat: no-repeat;
   width: 96px;
   height: 96px;
+  padding-right: 30px;
 }
 
+
+@media screen and (min-width: 1200px) {
+  .text-and-pic {
+    margin-left: 200px;
+  };
+};
