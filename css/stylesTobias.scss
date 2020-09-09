@@ -43,3 +43,13 @@ $secondary: #0BDBA3;
     }
   }
 }
+
+.iconsContainer{
+
+  > div{
+
+    > img{
+      filter: invert(30%) sepia(98%) saturate(4702%) hue-rotate(268deg) brightness(78%) contrast(129%);
+    }
+  }
+}
