@@ -32,83 +32,87 @@
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
 <body>
 
-<div class="container px-0">
-    <div class="frontBackground">
+<div class="container-fluid px-0">
+    <div class="frontBackground vh-100">
         <div class="d-flex flex-column justify-content-between align-items-center">
-            <nav class="navbar w-100 p-4 d-flex justify-content-between">
+            <nav class="navbar w-100 p-4 d-flex justify-content-between py-sm-4 px-sm-5">
                 <h3 class="text-white display-4 font-weight-normal">Studio</h3>
-                <img src="icons/bars-solid.svg" alt="Click here to open the menu">
+                <img class="btn p-0" src="icons/bars-solid.svg" alt="Click here to open the menu">
             </nav>
 
             <div class="middle d-flex flex-column align-items-center">
-                <h2 class="text-white text-center mb-3">We build digital<br>products & services</h2>
+                <h2 class="text-white text-center mb-3 ">We build digital<br>products & services</h2>
+                <p class="collapse container text-center px-0 mb-0 w-75 text-white font-italic d-sm-inline">From small businesses to large companies, we have been successfully creating
+                    websites and web applications for our clients.</p>
                 <a class="gradientButton text-white btn p-2 mt-3" href="#"><p class="m-0 py-2 px-5 bg-bgblack">See our work</p></a>
             </div>
 
-            <img class="scrollDown mb-4" src="icons/angle-double-down-solid.svg" alt="Click here to scroll down on the page">
+            <img class="scrollDown mb-4 btn p-0" src="icons/angle-double-down-solid.svg" alt="Click here to scroll down on the page">
         </div>
     </div>
 
-    <div class="iconsContainer py-5">
-        <div class="col-12 mt-5 pt-5 d-flex flex-column align-items-center">
+    <div class="iconsContainer py-5 d-sm-flex flex-sm-wrap justify-content-center">
+        <div class="col-12 mt-5 pt-5 d-flex flex-column align-items-center col-sm-6 py-sm-0 px-sm-2">
             <img class="col-4" src="icons/trophy-solid.svg" alt="Trophy icon">
             <h3 class="mt-3 display-5 text-uppercase">User interface</h3>
             <p class="lead text-center">sit amet nisl purus in mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque</p>
         </div>
 
-        <div class="col-12 mt-5 d-flex flex-column align-items-center">
+        <div class="col-12 mt-5 d-flex flex-column align-items-center col-sm-6 px-sm-2">
             <img class="col-4" src="icons/sketch-brands.svg" alt="Trophy icon">
             <h3 class="mt-3 display-5 text-uppercase">User experience</h3>
             <p class="lead text-center">sit amet nisl purus in mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque</p>
         </div>
 
-        <div class="col-12 mt-5 mb-5 pb-5 d-flex flex-column align-items-center">
+        <div class="col-12 mt-5 mb-5 pb-5 d-flex flex-column align-items-center col-sm-6">
             <img class="col-4" src="icons/code-solid.svg" alt="Trophy icon">
             <h3 class="mt-3 display-5 text-uppercase">Development</h3>
             <p class="lead text-center">sit amet nisl purus in mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque</p>
         </div>
     </div>
 
-    <div class="subscriptionContainer mb-5 py-5 border-primary d-flex flex-column align-items-center">
-        <h3 class="text-primary text-uppercase mt-5">Basic</h3>
-        <div class="d-flex align-items-center mt-3 mb-4">
-            <h2 class="text-primary font-weight-bold">$54</h2><p class="lead text-capitalize ml-1">/year</p>
+    <div class="d-sm-flex flex-sm-wrap justify-content-sm-center">
+        <div class="subscriptionContainer mb-5 py-5 border-primary d-flex flex-column align-items-center col-sm-6 my-sm-0 ml-sm-0 mr-sm-2">
+            <h3 class="text-primary text-uppercase mt-5">Basic</h3>
+            <div class="d-flex align-items-center mt-3 mb-4">
+                <h2 class="text-primary font-weight-bold">$54</h2><p class="lead text-capitalize ml-1">/year</p>
+            </div>
+            <p class="my-3 lead text-capitalize">1 mail address</p>
+            <p class="my-3 lead text-capitalize">No support</p>
+            <p class="my-3 lead text-capitalize">One product</p>
+            <p class="my-3 lead text-capitalize">One client</p>
+            <p class="mt-3 mb-5 lead">1GB Storage</p>
+
+            <a class="gradientButton text-white btn p-2 mt-5 mb-5" href="#"><p class="m-0 py-2 px-5 bg-bgblack text-capitalize">Buy now</p></a>
         </div>
-        <p class="my-3 lead text-capitalize">1 mail address</p>
-        <p class="my-3 lead text-capitalize">No support</p>
-        <p class="my-3 lead text-capitalize">One product</p>
-        <p class="my-3 lead text-capitalize">One client</p>
-        <p class="mt-3 mb-5 lead">1GB Storage</p>
 
-        <a class="gradientButton text-white btn p-2 mt-5 mb-5" href="#"><p class="m-0 py-2 px-5 bg-bgblack text-capitalize">Buy now</p></a>
-    </div>
+        <div class="subscriptionContainer gradientBG mb-5 mt-5 py-5 border-0 d-flex flex-column align-items-center col-sm-6 my-sm-0 ml-sm-2 mr-sm-0">
+            <h3 class="text-white text-uppercase mt-5">Standard</h3>
+            <div class="d-flex align-items-center mt-3 mb-4">
+                <h2 class="text-white  font-weight-bold">$84</h2><p class="text-white lead text-capitalize ml-1">/year</p>
+            </div>
+            <p class="text-white my-3 lead">2 mail addresses</p>
+            <p class="text-white my-3 lead">Limited support</p>
+            <p class="text-white my-3 lead">One product</p>
+            <p class="text-white my-3 lead">Two clients</p>
+            <p class="text-white mt-3 mb-5 lead">5GB Storage</p>
 
-    <div class="subscriptionContainer gradientBG mb-5 mt-5 py-5 border-0 d-flex flex-column align-items-center">
-        <h3 class="text-white text-uppercase mt-5">Standard</h3>
-        <div class="d-flex align-items-center mt-3 mb-4">
-            <h2 class="text-white  font-weight-bold">$84</h2><p class="text-white lead text-capitalize ml-1">/year</p>
+            <a class="gradientButton bg-white btn p-2 mt-5 mb-5" href="#"><p class="m-0 py-2 px-5 bg-white text-primary text-capitalize">Buy now</p></a>
         </div>
-        <p class="text-white my-3 lead">2 mail addresses</p>
-        <p class="text-white my-3 lead">Limited support</p>
-        <p class="text-white my-3 lead">One product</p>
-        <p class="text-white my-3 lead">Two clients</p>
-        <p class="text-white mt-3 mb-5 lead">5GB Storage</p>
 
-        <a class="gradientButton bg-white btn p-2 mt-5 mb-5" href="#"><p class="m-0 py-2 px-5 bg-white text-primary text-capitalize">Buy now</p></a>
-    </div>
+        <div class="subscriptionContainer mb-5 mt-5 py-5 border-primary d-flex flex-column align-items-center col-sm-6">
+            <h3 class="text-primary text-uppercase mt-5">Pro</h3>
+            <div class="d-flex align-items-center mt-3 mb-4">
+                <h2 class="text-primary font-weight-bold">$154</h2><p class="lead text-capitalize ml-1">/year</p>
+            </div>
+            <p class="my-3 lead text-capitalize">3 mail addresses</p>
+            <p class="my-3 lead text-capitalize">Unlimited support</p>
+            <p class="my-3 lead text-capitalize">One product</p>
+            <p class="my-3 lead text-capitalize">Unlimited clients</p>
+            <p class="mt-3 mb-5 lead">10GB Storage</p>
 
-    <div class="subscriptionContainer mb-5 mt-5 py-5 border-primary d-flex flex-column align-items-center">
-        <h3 class="text-primary text-uppercase mt-5">Pro</h3>
-        <div class="d-flex align-items-center mt-3 mb-4">
-            <h2 class="text-primary font-weight-bold">$154</h2><p class="lead text-capitalize ml-1">/year</p>
+            <a class="gradientButton text-white btn p-2 mt-5 mb-5" href="#"><p class="m-0 py-2 px-5 bg-bgblack text-capitalize">Buy now</p></a>
         </div>
-        <p class="my-3 lead text-capitalize">3 mail addresses</p>
-        <p class="my-3 lead text-capitalize">Unlimited support</p>
-        <p class="my-3 lead text-capitalize">One product</p>
-        <p class="my-3 lead text-capitalize">Unlimited clients</p>
-        <p class="mt-3 mb-5 lead">10GB Storage</p>
-
-        <a class="gradientButton text-white btn p-2 mt-5 mb-5" href="#"><p class="m-0 py-2 px-5 bg-bgblack text-capitalize">Buy now</p></a>
     </div>
 
 </div>
