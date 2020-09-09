@@ -3,8 +3,10 @@
 $primary: #8A0BDB;
 $secondary: #0BDBA3;
 
+$heightFrontBackground: 100vh;
+
 .frontBackground{
-  height: 100vh;
+  height: $heightFrontBackground;
   background-image: url("../img/bridge-1660417_1920.jpg");
   background-position: center;
   background-size: cover;
@@ -29,17 +31,55 @@ $secondary: #0BDBA3;
     }
 
     > .middle{
+    }
+  }
+}
 
-      > a{
-        background-image: linear-gradient(to right, $secondary, $primary);
-        background-size: 110%;
-        background-position: center;
-        border-radius: 100px;
+.gradientButton{
+  background-image: linear-gradient(to right, $secondary, $primary);
+  background-size: 110%;
+  background-position: center;
+  border-radius: 100px;
 
-        > p{
-          border-radius: 100px;
-        }
-      }
+  > p{
+    border-radius: 100px;
+  }
+}
+
+.iconsContainer{
+
+  > div{
+
+    > img{
+      filter: invert(30%) sepia(98%) saturate(4702%) hue-rotate(268deg) brightness(78%) contrast(129%);
+    }
+
+    > p{
+      color: #95989A;
+    }
+  }
+}
+
+.subscriptionContainer{
+  border-width: 4px;
+  border-style: solid;
+
+  > div{
+
+    > h2{
+      font-size: 44px;
+    }
+  }
+
+  .lead{
+    font-size: 20px;
+  }
+
+  &.gradientBG{
+    background-image: linear-gradient($secondary, $primary);
+
+    .gradientButton{
+      background: none;
     }
   }
 }
