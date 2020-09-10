@@ -124,6 +124,9 @@ img {
   .text-and-pic {
     margin-left: 200px;
   }
+  .textAndPicture{
+    padding: 100px 80px 100px 70px;
+  }
 };
 
 
@@ -187,4 +190,5 @@ $gradientHorizen: linear-gradient(
   .aboutSection{
     color: $textColor;
   }
+
 }
