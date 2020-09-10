@@ -94,6 +94,7 @@ img {
   height: 100%;
   width: 100%;
   opacity: 0.8;
+
 }
 
 .carousel-item > div {
@@ -118,6 +119,10 @@ img {
   height: 96px;
   padding-right: 30px;
 }
+
+.container > footer{
+ }
+
 
 
 @media screen and (min-width: 1200px) {
@@ -177,18 +182,7 @@ $gradientHorizen: linear-gradient(
   border-width: 4px !important;
 }
 
-.Purple {
-  border-color: $primary !important;
-  color: $primary !important;
-}
 
-.Astra {
-  background: $gradientVertical;
-}
 
-.textAndPicture  {
-  .aboutSection{
-    color: $textColor;
-  }
 
-}
+
