@@ -5,8 +5,13 @@ $secondary: #0BDBA3;
 
 
 $sm: "screen and (min-width: 576px)";
-$l: "screen and (min-width: 992px)";
+$lg: "screen and (min-width: 992px)";
 $xl: "screen and (min-width: 1200px)";
+
+#navbarContent{
+  z-index: 1000;
+  background-image: linear-gradient(45deg, $secondary, $primary);
+}
 
 .frontBackground{
   background-image: url("../img/bridge-1660417_1920.jpg");
@@ -53,6 +58,7 @@ $xl: "screen and (min-width: 1200px)";
 
     > img{
       filter: invert(30%) sepia(98%) saturate(4702%) hue-rotate(268deg) brightness(78%) contrast(129%);
+      height: 96px;
     }
 
     > p{
@@ -62,25 +68,31 @@ $xl: "screen and (min-width: 1200px)";
 }
 
 .subscriptionContainer{
-  border-width: 4px;
-  border-style: solid;
-
   > div{
 
-    > h2{
-      font-size: 44px;
-    }
-  }
+    > div{
+      border-width: 4px;
+      border-style: solid;
+      box-sizing: border-box;
 
-  .lead{
-    font-size: 20px;
-  }
+      > div{
 
-  &.gradientBG{
-    background-image: linear-gradient($secondary, $primary);
+        > h2{
+          font-size: 44px;
+        }
+      }
 
-    .gradientButton{
-      background: none;
+      .lead{
+        font-size: 20px;
+      }
+
+      &.gradientBG{
+        background-image: linear-gradient($secondary, $primary);
+
+        .gradientButton{
+          background: none;
+        }
+      }
     }
   }
 }
@@ -101,5 +113,28 @@ $xl: "screen and (min-width: 1200px)";
         }
       }
     }
+  }
+}
+
+@media #{$lg} {
+  .frontBackground{
+
+    > div{
+
+      > .middle{
+
+        > h2{
+          font-size: 82px;
+        }
+
+        > p{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .iconsContainer, .subscriptionContainer{
+    max-width: 1200px;
   }
 }
