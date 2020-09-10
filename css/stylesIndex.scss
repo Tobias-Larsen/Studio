@@ -126,3 +126,11 @@ img {
     margin-left: 200px;
   };
 };
+
+&.gradientBG{
+  background-image: linear-gradient($secondary, $primary);
+
+  .gradientButton{
+    background: none;
+  };
+};
