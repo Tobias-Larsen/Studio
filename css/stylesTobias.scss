@@ -3,14 +3,26 @@
 $primary: #8A0BDB;
 $secondary: #0BDBA3;
 
-$heightFrontBackground: 100vh;
+
+$sm: "screen and (min-width: 576px)";
+$lg: "screen and (min-width: 992px)";
+$xl: "screen and (min-width: 1200px)";
+
+#navbarContent{
+  z-index: 1000;
+  background-image: linear-gradient(45deg, $secondary, $primary);
+
+  .cross{
+    top: 0;
+    right: 0;
+
+  }
+}
 
 .frontBackground{
-  height: $heightFrontBackground;
   background-image: url("../img/bridge-1660417_1920.jpg");
   background-position: center;
   background-size: cover;
-  position: relative;
 
   > div{
     height: 100%;
@@ -52,6 +64,7 @@ $heightFrontBackground: 100vh;
 
     > img{
       filter: invert(30%) sepia(98%) saturate(4702%) hue-rotate(268deg) brightness(78%) contrast(129%);
+      height: 96px;
     }
 
     > p{
@@ -61,25 +74,73 @@ $heightFrontBackground: 100vh;
 }
 
 .subscriptionContainer{
-  border-width: 4px;
-  border-style: solid;
-
   > div{
 
-    > h2{
-      font-size: 44px;
+    > div{
+      border-width: 4px;
+      border-style: solid;
+      box-sizing: border-box;
+
+      > div{
+
+        > h2{
+          font-size: 44px;
+        }
+      }
+
+      .lead{
+        font-size: 20px;
+      }
+
+      &.gradientBG{
+        background-image: linear-gradient($secondary, $primary);
+
+        .gradientButton{
+          background: none;
+        }
+      }
+    }
+  }
+}
+
+@media #{$sm} {
+  .frontBackground{
+
+    > div{
+
+      > .middle{
+
+        > h2{
+          font-size: 62px;
+        }
+
+        > p{
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media #{$lg} {
+  .frontBackground{
+
+    > div{
+
+      > .middle{
+
+        > h2{
+          font-size: 82px;
+        }
+
+        > p{
+          font-size: 18px;
+        }
+      }
     }
   }
 
-  .lead{
-    font-size: 20px;
-  }
-
-  &.gradientBG{
-    background-image: linear-gradient($secondary, $primary);
-
-    .gradientButton{
-      background: none;
-    }
+  .iconsContainer, .subscriptionContainer{
+    max-width: 1200px;
   }
 }

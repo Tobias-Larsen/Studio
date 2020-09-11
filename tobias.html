@@ -32,83 +32,143 @@
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
 <body>
 
-<div class="container px-0">
-    <div class="frontBackground">
+<div class="container-fluid px-0">
+<!--    Burgermenu-->
+    <div class="collapse navbar-collapse position-absolute vh-100 w-100 d-lg-none" id="navbarContent">
+        <ul class="navbar-nav ml-auto w-100 h-100 d-flex justify-content-center align-items-center position-relative">
+            <li class="cross position-fixed mr-4 mt-5 btn" data-toggle="collapse" data-target="#navbarContent">
+                <img src="icons/times.svg" alt="Click here to close the menu">
+            </li>
+
+            <li class="nav-item my-2">
+                <a href="#" class="nav-link text-white">Home</a>
+            </li>
+            <li class="nav-item my-2">
+                <a href="#" class="nav-link text-white">About Us</a>
+            </li>
+            <li class="nav-item my-2">
+                <a href="#" class="nav-link text-white">Our Work</a>
+            </li>
+            <li class="nav-item my-2">
+                <a href="#" class="nav-link text-white">Expertise</a>
+            </li>
+            <li class="nav-item my-2">
+                <a href="#" class="nav-link text-white">Price</a>
+            </li>
+            <li class="nav-item my-2">
+                <a href="#" class="nav-link text-white">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div id="parallax" class="frontBackground col-12 p-0 vh-100">
         <div class="d-flex flex-column justify-content-between align-items-center">
-            <nav class="navbar w-100 p-4 d-flex justify-content-between">
+            <nav class="navbar w-100 p-4 d-flex justify-content-between py-sm-4 px-sm-5">
                 <h3 class="text-white display-4 font-weight-normal">Studio</h3>
-                <img src="icons/bars-solid.svg" alt="Click here to open the menu">
+                <img class="btn p-0 d-lg-none" src="icons/bars-solid.svg" alt="Click here to open the menu" type="button" data-toggle="collapse" data-target="#navbarContent">
+
+                <ul class="navbar d-none d-lg-flex list-unstyled">
+                    <li class="nav-item my-2">
+                        <a href="#" class="nav-link text-white">Home</a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a href="#" class="nav-link text-white">About Us</a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a href="#" class="nav-link text-white">Our Work</a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a href="#" class="nav-link text-white">Expertise</a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a href="#" class="nav-link text-white">Price</a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a href="#" class="nav-link text-white">Contact</a>
+                    </li>
+                </ul>
             </nav>
 
             <div class="middle d-flex flex-column align-items-center">
                 <h2 class="text-white text-center mb-3">We build digital<br>products & services</h2>
+                <p class="collapse container text-center px-0 mb-0 w-75 text-white font-italic d-sm-inline">From small businesses to large companies, we have been successfully creating
+                    websites and web applications for our clients.</p>
                 <a class="gradientButton text-white btn p-2 mt-3" href="#"><p class="m-0 py-2 px-5 bg-bgblack">See our work</p></a>
             </div>
 
-            <img class="scrollDown mb-4" src="icons/angle-double-down-solid.svg" alt="Click here to scroll down on the page">
+            <img class="scrollDown mb-4 btn p-0" src="icons/angle-double-down-solid.svg" alt="Click here to scroll down on the page">
         </div>
     </div>
 
-    <div class="iconsContainer py-5">
-        <div class="col-12 mt-5 pt-5 d-flex flex-column align-items-center">
-            <img class="col-4" src="icons/trophy-solid.svg" alt="Trophy icon">
+    <div class="iconsContainer col-12 px-0 py-5 d-sm-flex flex-sm-wrap justify-content-sm-center my-sm-5 mx-xl-auto">
+        <div class="col-12 mt-5 pt-5 d-flex flex-column align-items-center col-sm-6 py-sm-0 px-sm-2 col-lg-4">
+            <img class="" src="icons/trophy-solid.svg" alt="Trophy icon">
             <h3 class="mt-3 display-5 text-uppercase">User interface</h3>
-            <p class="lead text-center">sit amet nisl purus in mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque</p>
+            <p class="lead text-center px-sm-4">sit amet nisl purus in mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque</p>
         </div>
 
-        <div class="col-12 mt-5 d-flex flex-column align-items-center">
-            <img class="col-4" src="icons/sketch-brands.svg" alt="Trophy icon">
+        <div class="col-12 mt-5 d-flex flex-column align-items-center col-sm-6 px-sm-2 col-lg-4">
+            <img class="" src="icons/sketch-brands.svg" alt="Trophy icon">
             <h3 class="mt-3 display-5 text-uppercase">User experience</h3>
-            <p class="lead text-center">sit amet nisl purus in mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque</p>
+            <p class="lead text-center px-sm-4">sit amet nisl purus in mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque</p>
         </div>
 
-        <div class="col-12 mt-5 mb-5 pb-5 d-flex flex-column align-items-center">
-            <img class="col-4" src="icons/code-solid.svg" alt="Trophy icon">
+        <div class="col-12 mt-5 mb-5 pb-5 d-flex flex-column align-items-center col-sm-6 py-sm-0 px-sm-2 col-lg-4">
+            <img class="" src="icons/code-solid.svg" alt="Trophy icon">
             <h3 class="mt-3 display-5 text-uppercase">Development</h3>
-            <p class="lead text-center">sit amet nisl purus in mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque</p>
+            <p class="lead text-center px-sm-4">sit amet nisl purus in mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque</p>
         </div>
     </div>
 
-    <div class="subscriptionContainer mb-5 py-5 border-primary d-flex flex-column align-items-center">
-        <h3 class="text-primary text-uppercase mt-5">Basic</h3>
-        <div class="d-flex align-items-center mt-3 mb-4">
-            <h2 class="text-primary font-weight-bold">$54</h2><p class="lead text-capitalize ml-1">/year</p>
+    <div class="subscriptionContainer col-12 p-0 d-sm-flex flex-sm-wrap justify-content-sm-center mx-xl-auto">
+        <div class="mb-5 p-0 col-sm-6 m-sm-0 pr-sm-1 pb-sm-1 col-lg-4 pr-lg-2 pb-lg-0">
+            <div class="col-12 border-primary py-5 d-flex flex-column align-items-center px-sm-0">
+                <h3 class="text-primary text-uppercase mt-5">Basic</h3>
+                <div class="d-flex align-items-center mt-3 mb-4">
+                    <h2 class="text-primary font-weight-bold">$54</h2><p class="lead text-capitalize ml-1">/year</p>
+                </div>
+                <p class="my-3 lead text-capitalize">1 mail address</p>
+                <p class="my-3 lead text-capitalize">No support</p>
+                <p class="my-3 lead text-capitalize">One product</p>
+                <p class="my-3 lead text-capitalize">One client</p>
+                <p class="mt-3 mb-5 lead">1GB Storage</p>
+
+                <a class="gradientButton text-white btn p-2 mt-5 mb-5" href="#"><p class="m-0 py-2 px-5 bg-bgblack text-capitalize">Buy now</p></a>
+            </div>
         </div>
-        <p class="my-3 lead text-capitalize">1 mail address</p>
-        <p class="my-3 lead text-capitalize">No support</p>
-        <p class="my-3 lead text-capitalize">One product</p>
-        <p class="my-3 lead text-capitalize">One client</p>
-        <p class="mt-3 mb-5 lead">1GB Storage</p>
 
-        <a class="gradientButton text-white btn p-2 mt-5 mb-5" href="#"><p class="m-0 py-2 px-5 bg-bgblack text-capitalize">Buy now</p></a>
-    </div>
+        <div class="mb-5 p-0 col-sm-6 m-sm-0 pl-sm-1 pb-sm-1 col-lg-4 px-lg-2  pb-lg-0">
+            <div class="gradientBG border-0 h-100 col-12 py-5 d-flex flex-column align-items-center px-sm-0">
+                <h3 class="text-white text-uppercase mt-5">Standard</h3>
+                <div class="d-flex align-items-center mt-3 mb-4">
+                    <h2 class="text-white  font-weight-bold">$84</h2><p class="text-white lead text-capitalize ml-1">/year</p>
+                </div>
+                <p class="text-white my-3 lead">2 mail addresses</p>
+                <p class="text-white my-3 lead">Limited support</p>
+                <p class="text-white my-3 lead">One product</p>
+                <p class="text-white my-3 lead">Two clients</p>
+                <p class="text-white mt-3 mb-5 lead">5GB Storage</p>
 
-    <div class="subscriptionContainer gradientBG mb-5 mt-5 py-5 border-0 d-flex flex-column align-items-center">
-        <h3 class="text-white text-uppercase mt-5">Standard</h3>
-        <div class="d-flex align-items-center mt-3 mb-4">
-            <h2 class="text-white  font-weight-bold">$84</h2><p class="text-white lead text-capitalize ml-1">/year</p>
+                <a class="gradientButton bg-white btn p-2 mt-5 mb-5" href="#"><p class="m-0 py-2 px-5 bg-white text-primary text-capitalize">Buy now</p></a>
+            </div>
         </div>
-        <p class="text-white my-3 lead">2 mail addresses</p>
-        <p class="text-white my-3 lead">Limited support</p>
-        <p class="text-white my-3 lead">One product</p>
-        <p class="text-white my-3 lead">Two clients</p>
-        <p class="text-white mt-3 mb-5 lead">5GB Storage</p>
 
-        <a class="gradientButton bg-white btn p-2 mt-5 mb-5" href="#"><p class="m-0 py-2 px-5 bg-white text-primary text-capitalize">Buy now</p></a>
-    </div>
+        <div class="mb-5 p-0 col-sm-6 m-sm-0 pt-sm-1 col-lg-4 pl-lg-2  pt-lg-0">
+            <div class="col-12 border-primary py-5 d-flex flex-column align-items-center px-sm-0">
+                <h3 class="text-primary text-uppercase mt-5">Pro</h3>
+                <div class="d-flex align-items-center mt-3 mb-4">
+                    <h2 class="text-primary font-weight-bold">$154</h2><p class="lead text-capitalize ml-1">/year</p>
+                </div>
+                <p class="my-3 lead text-capitalize">3 mail addresses</p>
+                <p class="my-3 lead text-capitalize">Unlimited support</p>
+                <p class="my-3 lead text-capitalize">One product</p>
+                <p class="my-3 lead text-capitalize">Unlimited clients</p>
+                <p class="mt-3 mb-5 lead">10GB Storage</p>
 
-    <div class="subscriptionContainer mb-5 mt-5 py-5 border-primary d-flex flex-column align-items-center">
-        <h3 class="text-primary text-uppercase mt-5">Pro</h3>
-        <div class="d-flex align-items-center mt-3 mb-4">
-            <h2 class="text-primary font-weight-bold">$154</h2><p class="lead text-capitalize ml-1">/year</p>
+                <a class="gradientButton text-white btn p-2 mt-5 mb-5" href="#"><p class="m-0 py-2 px-5 bg-bgblack text-capitalize">Buy now</p></a>
+            </div>
         </div>
-        <p class="my-3 lead text-capitalize">3 mail addresses</p>
-        <p class="my-3 lead text-capitalize">Unlimited support</p>
-        <p class="my-3 lead text-capitalize">One product</p>
-        <p class="my-3 lead text-capitalize">Unlimited clients</p>
-        <p class="mt-3 mb-5 lead">10GB Storage</p>
-
-        <a class="gradientButton text-white btn p-2 mt-5 mb-5" href="#"><p class="m-0 py-2 px-5 bg-bgblack text-capitalize">Buy now</p></a>
     </div>
 
 </div>
@@ -116,6 +176,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
 <script>
 
     $(function () {
@@ -124,6 +185,11 @@
                 scrollTop: $(".iconsContainer").offset().top
             }, 400);
         });
+
+        // let image ='#' + $('#parallax').attr('id');
+        //
+        //
+        // new simpleParallax(image);
     });
 
 </script>
